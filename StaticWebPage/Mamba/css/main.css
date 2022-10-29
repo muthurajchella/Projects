@@ -71,7 +71,10 @@
 
 /*Header Start*/
 .header{
+    width: 100%;
+    height: auto;
     background-color: white;
+    /* position: fixed; */
     z-index: 20;
 }
 
@@ -86,7 +89,6 @@
     color: #1c5c93;
     font-weight: 100;
     cursor: pointer;
-    padding-top: 4px;
 }
 
 .header-nav ul{
@@ -95,11 +97,12 @@
 
 .header-nav ul li{
     list-style: none;
-    margin: 15px;
+    margin-left: 15px;
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(15, 2, 2, 0.5); 
     cursor: pointer;
+    padding-top: 10px;
 }
 
 .header-nav ul li a:hover{
@@ -323,7 +326,7 @@
 .finger-icon{
     width: 20%;
     height: 75px;
-    background-color: azure;
+    background-color: #f1f7fb;
     border-radius: 4px;
     position: relative;
     transition: 0.5s;
@@ -344,7 +347,7 @@
 }
 
 .finger-print:hover .finger-icon i{
-    color: azure;
+    color: #f1f7fb;
 }
 
 .finger-text{
@@ -374,7 +377,7 @@
 .gift-icon{
     width: 20%;
     height: 75px;
-    background-color: azure;
+    background-color: #f1f7fb;
     border-radius: 4px;
     position: relative;
     transition: 0.5s;
@@ -391,11 +394,10 @@
 
 .gift:hover .gift-icon{
     background-color: rgb(6, 6, 248, 0.7);
-   
 }
 
 .gift:hover .gift-icon i{
-    color: azure;
+    color: #f1f7fb;
 }
 
 .gift-text{
@@ -486,7 +488,7 @@
 .box4{
     width: 33.33%;
     border-right: solid 1px rgb(23, 23, 23, 0.1);
-    padding: 20px;                            
+    padding: 20px;                         
 }
 
 .box5{
@@ -500,7 +502,6 @@
     border-bottom: none;
     padding: 20px;
 }
-
 
 .achive-flex2 h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -516,7 +517,6 @@
     margin-top: 20px;
 }
 
-
 .achive-flex2 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
@@ -525,13 +525,9 @@
 }
 /*Achive End*/
 
-
-
-
-
 /*Value Start*/
 .value{
-    background-color: azure;
+    background-color: #f1f7fb;
     margin-top: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -540,7 +536,7 @@
 .value-flex{
     display: flex;
     justify-content: space-between;
-    background-color: azure;
+    background-color: #f1f7fb;
     padding: 10px;
     margin-inline: 20px;
 }
@@ -979,7 +975,7 @@
 
 /*Portfolio Start*/
 .protfolio{
-    background-color: rgb(240, 255, 255, 0.7);
+    background-color: #f1f7fb;
     text-align: center;
     width: 100%;
     height: 1200px;
@@ -1119,127 +1115,955 @@
     width: 100%;
     height: 80%;
     margin-top: 25px;
+    overflow: hidden;
 }
 
 .port-img1-flex{
     width: 100%;
-    height: 33.33%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-}
-
-.img1{
-    width: 33.33%;
-    height: 270px;
-    background-image: url(../image/portfolio-1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-right: 20px;
-    position: relative;
-    transition: 0.5s;
     overflow: hidden;
-}
-
-.img1:hover{
-    transform: scale(1.1);
-}
-
-.img2{
-    width: 33.33%;
-    height: 270px;
-    background-image: url(../image/portfolio-2.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.img3{
-    width: 33.33%;
-    height: 270px;
-    background-image: url(../image/portfolio-3.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 20px;
 }
 
 .port-img2-flex{
     width: 100%;
-    height: 33.33%;
+    height: auto;
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
-}
-
-.img4{
-    width: 33.33%;
-    height: 270px;
-    background-image: url(../image/portfolio-4.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-right: 20px;
-}
-
-.img5{
-    width: 33.33%;
-    height: 270px;
-    background-image: url(../image/portfolio-5.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.img6{
-    width: 33.33%;
-    height: 270px;
-    background-image: url(../image/portfolio-6.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 20px;
+    overflow: hidden;
 }
 
 .port-img3-flex{
     width: 100%;
-    height: 33.33%;
+    height: auto;
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-.img7{
-    width: 33.33%;
+.pimg-box1{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg1{
+    width: 100%;
+    height: 270px;
+    background-image: url(../image/portfolio-1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.pimg-box1:hover .pimg1{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur1{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur1 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur1 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur1 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box1:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box1:hover .pblur1{
+    opacity: 1;
+}
+
+.pimg-box1:hover .pblur1 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box1:hover .pblur1 p{
+    transform: translateY(20px);
+}
+
+.pimg-box1:hover .pblur1 i{
+    transform: translateY(20px);
+}
+
+.pblur1 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box2{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg2{
+    width: 100%;
+    height: 270px;
+    background-image: url(../image/portfolio-2.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.pimg-box2:hover .pimg2{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur2{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur2 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur2 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur2 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box2:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box2:hover .pblur2{
+    opacity: 1;
+}
+
+.pimg-box2:hover .pblur2 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box2:hover .pblur2 p{
+    transform: translateY(20px);
+}
+
+.pimg-box2:hover .pblur2 i{
+    transform: translateY(20px);
+}
+
+.pblur2 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box3{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg3{
+    width: 100%;
+    height: 270px;
+    background-image: url(../image/portfolio-3.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.pimg-box3:hover .pimg3{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur3{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur3 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur3 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur3 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box3:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box3:hover .pblur3{
+    opacity: 1;
+}
+
+.pimg-box3:hover .pblur3 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box3:hover .pblur3 p{
+    transform: translateY(20px);
+}
+
+.pimg-box3:hover .pblur3 i{
+    transform: translateY(20px);
+}
+
+.pblur3 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box4{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg4{
+    width: 100%;
+    height: 270px;
+    background-image: url(../image/portfolio-4.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.pimg-box4:hover .pimg4{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur4{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur4 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur4 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur4 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box4:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box4:hover .pblur4{
+    opacity: 1;
+}
+
+.pimg-box4:hover .pblur4 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box4:hover .pblur4 p{
+    transform: translateY(20px);
+}
+
+.pimg-box4:hover .pblur4 i{
+    transform: translateY(20px);
+}
+
+.pblur4 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box5{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg5{
+    width: 100%;
+    height: 270px;
+    background-image: url(../image/portfolio-5.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.pimg-box5:hover .pimg5{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur5{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur5 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur5 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur5 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box5:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box5:hover .pblur5{
+    opacity: 1;
+}
+
+.pimg-box5:hover .pblur5 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box5:hover .pblur5 p{
+    transform: translateY(20px);
+}
+
+.pimg-box5:hover .pblur5 i{
+    transform: translateY(20px);
+}
+
+.pblur5 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box6{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg6{
+    width: 100%;
+    height: 270px;
+    background-image: url(../image/portfolio-6.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.pimg-box6:hover .pimg6{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur6{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur6 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur6 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur6 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box6:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box6:hover .pblur6{
+    opacity: 1;
+}
+
+.pimg-box6:hover .pblur6 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box6:hover .pblur6 p{
+    transform: translateY(20px);
+}
+
+.pimg-box6:hover .pblur6 i{
+    transform: translateY(20px);
+}
+
+.pblur6 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box7{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg7{
+    width: 100%;
     height: 270px;
     background-image: url(../image/portfolio-7.jpg);
     background-size: cover;
     background-position: center;
-    margin-right: 20px;
+    transition: 0.5s;
 }
 
-.img8{
-    width: 33.33%;
+.pimg-box7:hover .pimg7{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur7{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur7 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur7 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur7 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box7:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box7:hover .pblur7{
+    opacity: 1;
+}
+
+.pimg-box7:hover .pblur7 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box7:hover .pblur7 p{
+    transform: translateY(20px);
+}
+
+.pimg-box7:hover .pblur7 i{
+    transform: translateY(20px);
+}
+
+.pblur7 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box8{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg8{
+    width: 100%;
     height: 270px;
     background-image: url(../image/portfolio-8.jpg);
     background-size: cover;
     background-position: center;
-    margin-right: 10px;
-    margin-left: 10px;
+    transition: 0.5s;
 }
 
-.img9{
-    width: 33.33%;
+.pimg-box8:hover .pimg8{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur8{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur8 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur8 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur8 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box8:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box8:hover .pblur8{
+    opacity: 1;
+}
+
+.pimg-box8:hover .pblur8 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box8:hover .pblur8 p{
+    transform: translateY(20px);
+}
+
+.pimg-box8:hover .pblur8 i{
+    transform: translateY(20px);
+}
+
+.pblur8 i:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.pimg-box9{
+    width: 32%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pimg9{
+    width: 100%;
     height: 270px;
     background-image: url(../image/portfolio-9.jpg);
     background-size: cover;
     background-position: center;
-    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.pimg-box9:hover .pimg9{
+    transform: scale(1.1);
+}
+
+.pblur{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: #061624;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur9{
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pblur9 h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 20px; 
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur9 p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.pblur9 i{
+    width: 35px;
+    height: 25px;
+    clip-path: circle(50%);
+    font-size: 15px;
+    color: #428bca;
+    background-color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pimg-box9:hover .pblur{
+    opacity: 0.6;
+}
+
+.pimg-box9:hover .pblur9{
+    opacity: 1;
+}
+
+.pimg-box9:hover .pblur9 h1{
+    transform: translateY(20px);
+}
+
+.pimg-box9:hover .pblur9 p{
+    transform: translateY(20px);
+}
+
+.pimg-box9:hover .pblur9 i{
+    transform: translateY(20px);
+}
+
+.pblur9 i:hover{
+    background-color: #0d6efd;
+    color: white;
 }
 /*Portfolio End*/
 
-
-
-
-
+/*Team Start*/
 .team-back{
     width: 100%;
     height: auto;
@@ -1257,7 +2081,6 @@
     height: 10%;
     text-align: center;
     margin-top: 20px;
-
 }
 
 .team-head h3{
@@ -1286,7 +2109,6 @@
     height: 310px;
     margin-right: 20px;
     display: block;
-
 }
 
 .box1-img{
@@ -1407,8 +2229,7 @@
 }
 
 .box1-con a i:hover{
-    color: #0d6efd;
-   
+    color: #0d6efd; 
 }
 
 .box2-con{
@@ -1579,12 +2400,9 @@
 .team-box4:hover .box4-img{
     transform: scale(1.1);
 }
+/*Team End*/
 
-
-
-
-
-
+/*FAQ Start*/
 .faq-back{
     width: 100%;
     height: auto;
@@ -1604,8 +2422,7 @@
 .faq-head h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 35px; 
-    color: Contact Us;
-    
+    color: cadetblue;  
 }
 
 .faq-cont-flex{
@@ -1745,10 +2562,9 @@
     color: rgb(15, 15, 15, 0.7);
     margin-top: 20px;
 }
+/*FAQ End*/
 
-
-
-
+/*ContactUs Start*/
 .contactus{
     width: 100%;
     height: auto;
@@ -1770,73 +2586,236 @@
     color: #5c768d;
 }
 
-.contact-flex{
+.contact-con{
     width: 100%;
-    height: 90%;
-    display: flex;
-    margin-top: 40px;
+    height: 80%;
+    margin-top: 50px;
     box-sizing: border-box;
 }
 
-.contact-address{
-    width: 50%;
-    height: auto;
-    box-shadow: 0px 1px 5px rgb(0, 0, 0);
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.con-icon-circle{
-    width: 40px;
-    height: 40px;
-    border: solid 2px #9eccf4;
-    border-style: dashed;
-    border-radius: 20px;
-    margin-left: 45%;
-}
-
-.con-icon-circle i{
-    font-size: 25px;
-    margin-top: 8px;
-    color: #428bca;
-}
-
-.contact-address h3{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    color: #666;
-    margin-top: 10px;
-}
-
-.contact-connect{
-    width: 50%;
+.contact-box{
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
+.contact-add{
+    width: 48%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0px -3px 7px rgb(207, 213, 214);
+    padding-top: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-add i{
+    font-size: 25px;
+    color: #0d6efd;
+}
+
+.contact-add h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4e4f50;
+}
+
+.contact-add p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(170, 159, 159);
+}
+
+
 .contact-email{
-    width: 50%;
+    width: 24%;
     height: auto;
-    box-shadow: 0px 1px 5px black;
+    text-align: center;
+    box-shadow: 0px -3px 7px rgb(214, 207, 207);
+    padding-top: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-email i{
+    font-size: 25px;
+    color: #0d6efd;
+}
+
+.contact-email h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4e4f50;
+}
+
+.contact-email p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(170, 159, 159);
+}
+
+
+.contact-call{
+    width: 24%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0px -3px 7px rgb(214, 207, 207);
+    padding-top: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-call i{
+    font-size: 25px;
+    color: #0d6efd;
+}
+
+.contact-call h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4e4f50;
+}
+
+.contact-call p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(170, 159, 159);
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px -3px 7px rgb(202, 195, 195);
+    padding: 30px;
     box-sizing: border-box;
 }
 
-.contact-calls{
-    width: 50%;
+.contact-in1-flex{
+    width: 100%;
     height: auto;
-    box-shadow: 0px 1px 5px black;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.contact-in1{
+    width: 48%;
+    height: auto;
     box-sizing: border-box;
 }
 
 
+.contact-in2{
+    width: 48%;
+    height: auto;
+    box-sizing: border-box;
+}
 
+.contact-in1 input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: solid 1px rgb(204, 201, 201);
+    font-family: sans-serif;
+    font-size: 18px;
+}
 
+.contact-in1 input:focus{
+    outline: none;
+    border: #0d6efd solid 1px;
+}
 
+.contact-in2 input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: solid 1px rgb(204, 201, 201);
+    font-family: sans-serif;
+    font-size: 18px;
+}
 
+.contact-in2 input:focus{
+    outline: none;
+    border: #0d6efd solid 1px;
+}
 
+.contact-in3{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
 
+.contact-in3 input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: solid 1px rgb(204, 201, 201);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contact-in3 input:focus{
+    outline: none;
+    border: #0d6efd solid 1px;
+}
+
+.contact-ta{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.contact-ta textarea{
+    width: 100%;
+    height: 120px;
+    border: none;
+    border: solid 1px rgb(204, 201, 201);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contact-ta textarea:focus{
+    outline: none;
+    border: #0d6efd solid 1px;
+}
+
+.contact-btn{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.contact-btn button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-btn button:hover{
+    background-color: #a8bedf;
+}
+/*ContactUs End*/
+
+/*Footer Start*/
 .footer-sec{
     background-color: #5c768d;
 }
@@ -1873,7 +2852,6 @@
 
 .foot-contact ul li{
     display: flex;
-   
 }
 
 .foot-contact ul{
@@ -1921,8 +2899,7 @@
     padding-bottom: 4px;
     margin-inline: 3px;
     margin-top: 20px;
-    transition: 0.5s;
-    
+    transition: 0.5s; 
 }
 
 .foot-circle:hover{
@@ -2011,7 +2988,6 @@
     color: white;
 }
 
-
 .foot-newletter p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
@@ -2077,11 +3053,9 @@
 .links ul li a:hover{
     color: #0d6efd;
 }
+/*Footer End*/
 
-
-
-
-
+/*Legal Start*/
 .legal-sec{
     width: 100%;
     height: auto;
@@ -2134,6 +3108,7 @@
     padding-bottom: 20px;
     cursor: pointer;
 }
+/*Legal End*/
 
 
 
