@@ -1,0 +1,313 @@
+.container1{
+    width: 65%;
+    margin: auto;
+}
+
+.container2{
+    width:95%;
+    margin:auto;
+}
+
+/*Fonts Start*/
+@font-face {
+    font-family: "rajith";
+    src: url(../fonts/FuturaBT-Medium.ttf);
+}
+@font-face {
+    font-family:"futura-bold";
+    src: url(../fonts/Futura\ Bold.ttf);
+}
+@font-face {
+    font-family:"futura-book";
+    src: url(../fonts/Futura\ Book.ttf);
+}
+@font-face {
+    font-family:"futurastd-book";
+    src: url(../fonts/Futura\ Std\ Book.ttf);
+}
+@font-face {
+    font-family:"futurastd-heavy";
+    src: url(../fonts/Futura\ Std\ Heavy.ttf);
+}
+@font-face {
+    font-family:"futura-thin";
+    src: url(../fonts/Futura\ Thin.ttf);
+}
+/*Fonts End*/
+
+/*Navication Start*/
+.nlink{
+    font-size: 0.7em;
+    font-family:"rajith";
+    font-weight:600;
+    transition: 0.5s;
+}
+
+.nlink a:hover{
+    transform: scale(1.1);
+    color: #6c39bd;
+}
+/*Navication End*/
+
+@media(min-width:390px){
+.logo{
+        width:40%;
+    }
+}
+
+@media(min-width:1024px){
+    .logo{
+        width: 20%;
+    }
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+/*Banner Start*/
+.baneri{
+    background-size: cover;
+    height: 70vh;
+}
+
+.cock{
+    width:10%;
+}
+/*Banner End*/
+
+/*About Start*/
+.abouti p{
+    padding-top: 0.9rem;
+    font-family:"rajith";
+    color:#ABB2B9 ;
+}
+
+.aboutc h4{
+    font-family:"rajith";
+}
+
+.aboutc p{
+    font-family:"futurastd-book";
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.aboutc button{
+    font-family:"futurastd-book";
+    transition: 0.5s;
+    border: none;
+    background-color: rgb(218, 213, 221);
+    color: purple;
+}
+
+.aboutc button:hover{
+    background-color: #6c39bd;
+}
+/*About End*/
+
+/*About Cont Start*/
+.vision{
+    width: 80%;
+    background-color: #DE3163;
+    box-shadow: 30px -30px 3px rgb(230, 224, 224);
+}
+
+.vision h3,p{
+    font-family:"futura-book";
+}
+/*About Cont End*/
+
+/*Cord Start*/
+.cardhead h3{
+    font-family: "rajith";
+}
+
+.cordhead{
+    text-align: center;
+}
+
+.cock2{
+    width:5%;
+}
+
+.cord{
+    background-color: aqua;
+    background: linear-gradient(#EBEDEF  ,white);
+}
+
+.cordb{
+    border: none;
+}
+
+.textp{
+    font-size: 0.9rem;
+    font-family: "rajith";
+    color: #9a9fa4;
+}
+
+.texth{
+    font-size: 0.9rem;
+    font-family: "rajith";
+}
+
+.texts{
+    font-size: 0.7rem;
+    font-family: "rajith";
+    padding-bottom: 2rem;
+    color: #9a9fa4;
+}
+
+.cb button{
+    font-family: "rajith";
+    transition: 0.5s;
+    border: none;
+    background-color: rgb(218, 213, 221);
+    color: purple;
+}
+
+.cb button:hover{
+    background:#6c39bd;
+}
+
+.logohead{
+    text-align: center;
+}
+
+.logoh{
+    width: 5%;
+}
+
+.textr{
+    font-family:"futura-thin";
+    font-size:2rem;
+    font-weight: 600;
+}
+
+.gray img{
+    filter: grayscale(100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gray img:hover{
+    filter: none;
+}
+
+.gray span img{
+    filter: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gray span img:hover{
+    filter: grayscale(100%);
+}
+
+.logohead button{
+    font-family: "rajith"; 
+    transition: 0.5s;
+    border: none;
+    background-color: rgb(218, 213, 221);
+    color: purple;
+}
+
+.logohead button:hover{
+    background:#6c39bd;
+}
+
+.locat h6{
+    font-family:"rajith";
+    display: inline-block;
+    margin-bottom: 22px;
+}
+/*Cord End*/
+
+/*Footer Start*/
+footer{
+    background-color:#2C3E50;
+    color: #EBEDEF;
+}
+
+.locat span{
+    font-size: 0.7rem;
+    font-family:"rajith";
+    margin-top: 10px;
+}
+
+.locat p{
+    font-size: 0.7rem;
+    font-family:"rajith";
+}
+
+.line1::after{
+    content: "";
+	width:50px;
+	height:2px;
+	background:#ABB2B9;
+	position:relative;
+    top:8px;
+	left:-5px;
+	bottom:0;
+	right: 0;
+	margin: auto;
+	display: flex;
+}
+
+footer span{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer span:hover{
+     color:#3c2fcf;
+     cursor: pointer;
+}
+
+footer p{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer p:hover{
+    color:#3c2fcf;
+}
+
+.ficon i{
+    margin-left: 0.7rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ficon i:hover{
+    color:#3c2fcf;
+}
+
+.legal{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.7rem;
+    font-family:"rajith";
+    background-color:#2C3E50;
+    color: #EBEDEF;
+    border-top:1px solid #ccc;
+} 
+
+.legal span{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.legal span:hover{
+    color: #3c2fcf;
+}
+
+#date{
+    transition: 0.5s;
+}
+
+#date:hover{
+    color: white;
+}
+/*Footer End*/
